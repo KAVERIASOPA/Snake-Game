@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat ;
+    display: flex;                    
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#board{
+    background: linear-gradient(rgb(212, 243, 40), rgb(247, 247, 172));   /*  linear gradient is used so that we can add two colors */
+    width: 90vmin;
+    height: 92vmin; /* vmin is the smallest between vh and vw*/
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);   /* the grid is divided into 18 columns and rows*/
+}
+
+.head{
+    background: linear-gradient(red , yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple; /* body parts of snake */
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(rgb(118, 224, 241) , purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
